@@ -278,7 +278,7 @@ public class StorageNotification extends SystemUI {
 
         final Notification notif;
         switch (vol.getState()) {
-            case VolumeInfo.STATE_UNMOUNTED:
+            /**case VolumeInfo.STATE_UNMOUNTED:
                 notif = onVolumeUnmounted(vol);
                 break;
             case VolumeInfo.STATE_CHECKING:
@@ -302,7 +302,7 @@ public class StorageNotification extends SystemUI {
                 break;
             case VolumeInfo.STATE_BAD_REMOVAL:
                 notif = onVolumeBadRemoval(vol);
-                break;
+                break;*/
             default:
                 notif = null;
                 break;
