@@ -568,10 +568,10 @@
     <!-- XXXXXX END OF RESOURCES USING WRONG NAMING CONVENTION -->
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
-    <bool name="config_unplugTurnsOnScreen">false</bool>
+    <bool name="config_unplugTurnsOnScreen">true</bool>
 
     <!-- If this is true, the message that USB is only being used for charging will be shown. -->
-    <bool name="config_usbChargingMessage">true</bool>
+    <bool name="config_usbChargingMessage">false</bool>
 
     <!-- Set this true only if the device has separate attention and notification lights. -->
     <bool name="config_useAttentionLight">false</bool>
@@ -755,7 +755,7 @@
              5  UI_MODE_TYPE_APPLIANCE
              6  UI_MODE_TYPE_WATCH
          Any other values will have surprising consequences. -->
-    <integer name="config_defaultUiModeType">1</integer>
+    <integer name="config_defaultUiModeType">5</integer>
 
     <!--  Control whether to lock UI mode to what is selected from config_defaultUiModeType.
           Once UI mode is locked, applications cannot change it anymore. -->
