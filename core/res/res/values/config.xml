@@ -1461,7 +1461,7 @@
          PackageManager.FEATURE_TELEPHONY system feature, which is
          available on *any* device with a telephony radio, even if the
          device is data-only. -->
-    <bool name="config_voice_capable">true</bool>
+    <bool name="config_voice_capable">false</bool>
 
     <!-- Flag indicating that an outbound call must have a call capable phone account
          that has declared it can process the call's handle. -->
@@ -1478,7 +1478,7 @@
 
          Note: Disable SMS also disable voicemail waiting sms,
                cell broadcasting sms, and MMS. -->
-    <bool name="config_sms_capable">true</bool>
+    <bool name="config_sms_capable">false</bool>
 
     <!-- Default SMS Application. This will be the default SMS application when
          the phone first boots. The user can then change the default app to one
@@ -1967,7 +1967,7 @@
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
-    <bool name="config_safe_media_volume_enabled">true</bool>
+    <bool name="config_safe_media_volume_enabled">false</bool>
 
     <!-- Set to true if the wifi display supports compositing content stored
          in gralloc protected buffers.  For this to be true, there must exist
@@ -2584,7 +2584,7 @@
          unit where there are hardware mechanisms to protect the device (physical keys) and not
          much in the way of user data.
     -->
-    <bool name="config_strongAuthRequiredOnBoot">true</bool>
+    <bool name="config_strongAuthRequiredOnBoot">false</bool>
 
     <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
          handle wallpaper cropping.
@@ -2657,7 +2657,7 @@
     <bool name="config_supportSystemNavigationKeys">false</bool>
 
     <!-- emergency call number for the emergency affordance -->
-    <string name="config_emergency_call_number" translatable="false">112</string>
+    <string name="config_emergency_call_number" translatable="false">999</string>
 
     <!-- Do not translate. Mcc codes whose existence trigger the presence of emergency
          affordances-->
