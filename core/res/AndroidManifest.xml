@@ -675,7 +675,7 @@
         android:permissionGroup="android.permission-group.STORAGE"
         android:label="@string/permlab_sdcardRead"
         android:description="@string/permdesc_sdcardRead"
-        android:protectionLevel="dangerous" />
+        android:protectionLevel="normal" />
 
     <!-- Allows an application to write to external storage.
          <p class="note"><strong>Note:</strong> If <em>both</em> your <a
@@ -696,7 +696,7 @@
         android:permissionGroup="android.permission-group.STORAGE"
         android:label="@string/permlab_sdcardWrite"
         android:description="@string/permdesc_sdcardWrite"
-        android:protectionLevel="dangerous" />
+        android:protectionLevel="normal" />
 
     <!-- ====================================================================== -->
     <!-- Permissions for accessing the device location                          -->
@@ -759,7 +759,7 @@
         android:permissionGroup="android.permission-group.PHONE"
         android:label="@string/permlab_readPhoneState"
         android:description="@string/permdesc_readPhoneState"
-        android:protectionLevel="dangerous" />
+        android:protectionLevel="normal" />
 
     <!-- Allows an application to initiate a phone call without going through
         the Dialer user interface for the user to confirm the call.
