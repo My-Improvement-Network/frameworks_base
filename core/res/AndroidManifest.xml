@@ -2493,7 +2493,7 @@
     <!-- @SystemApi Allows an application to revoke specific permissions.
         @hide -->
     <permission android:name="android.permission.REVOKE_RUNTIME_PERMISSIONS"
-         android:protectionLevel="normal" />
+         android:protectionLevel="normnal" />
 
     <!-- @hide Allows an application to observe permission changes. -->
     <permission android:name="android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS"
