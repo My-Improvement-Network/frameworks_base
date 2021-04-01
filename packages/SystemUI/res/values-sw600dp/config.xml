@@ -31,7 +31,7 @@
     <integer name="keyguard_max_notification_count">5</integer>
 
     <!-- Set to true to enable the user switcher on the keyguard. -->
-    <bool name="config_keyguardUserSwitcher">true</bool>
+    <bool name="config_keyguardUserSwitcher">false</bool>
 
     <!-- Nav bar button default ordering/layout -->
     <string name="config_navBarLayout" translatable="false">space;volume_sub,back,home,recent,volume_add,screenshot;menu_ime</string>
