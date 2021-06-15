@@ -59,7 +59,7 @@
     <bool name="config_showMin3G">false</bool>
 
     <!-- Show rotation lock toggle in System UI-->
-    <bool name="config_showRotationLock">true</bool>
+    <bool name="config_showRotationLock">false</bool>
 
     <!-- Vibration duration for GlowPadView used in SearchPanelView -->
     <integer translatable="false" name="config_vibration_duration">0</integer>
@@ -100,12 +100,12 @@
 
     <!-- The default tiles to display in QuickSettings -->
     <string name="quick_settings_tiles_default" translatable="false">
-        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane
+        wifi,bt
     </string>
 
     <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
     <string name="quick_settings_tiles_stock" translatable="false">
-        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,hotspot,inversion,saver,work,cast,night
+        wifi,bt,cast,night
     </string>
 
     <!-- The tiles to display in QuickSettings -->
@@ -190,7 +190,7 @@
     <item name="recents_layout_unfocused_range_max" format="float" type="integer">2.5</item>
 
     <!-- Whether to enable KeyguardService or not -->
-    <bool name="config_enableKeyguardService">true</bool>
+    <bool name="config_enableKeyguardService">false</bool>
 
     <!-- The maximum count of notifications on Keyguard. The rest will be collapsed in an overflow
      card. -->
