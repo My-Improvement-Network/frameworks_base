@@ -275,8 +275,46 @@ public class StorageNotification extends SystemUI {
 
     private void onPublicVolumeStateChangedInternal(VolumeInfo vol) {
         Log.d(TAG, "Notifying about public volume: " + vol.toString());
-        mNotificationManager.cancelAsUser(vol.getId(), SystemMessage.NOTE_STORAGE_PUBLIC,
-                UserHandle.ALL);
+
+        final Notification notif;
+        switch (vol.getState()) {
+            case VolumeInfo.STATE_UNMOUNTED:
+                notif = onVolumeUnmounted(vol);
+                break;
+            case VolumeInfo.STATE_CHECKING:
+                notif = onVolumeChecking(vol);
+                break;
+            case VolumeInfo.STATE_MOUNTED:
+            case VolumeInfo.STATE_MOUNTED_READ_ONLY:
+                notif = onVolumeMounted(vol);
+                break;
+            case VolumeInfo.STATE_FORMATTING:
+                notif = onVolumeFormatting(vol);
+                break;
+            case VolumeInfo.STATE_EJECTING:
+                notif = onVolumeEjecting(vol);
+                break;
+            case VolumeInfo.STATE_UNMOUNTABLE:
+                notif = onVolumeUnmountable(vol);
+                break;
+            case VolumeInfo.STATE_REMOVED:
+                notif = onVolumeRemoved(vol);
+                break;
+            case VolumeInfo.STATE_BAD_REMOVAL:
+                notif = onVolumeBadRemoval(vol);
+                break;
+            default:
+                notif = null;
+                break;
+        }
+
+        if (notif != null) {
+            mNotificationManager.notifyAsUser(vol.getId(), SystemMessage.NOTE_STORAGE_PUBLIC,
+                    notif, UserHandle.ALL);
+        } else {
+            mNotificationManager.cancelAsUser(vol.getId(), SystemMessage.NOTE_STORAGE_PUBLIC,
+                    UserHandle.ALL);
+        }
     }
 
     private Notification onVolumeUnmounted(VolumeInfo vol) {

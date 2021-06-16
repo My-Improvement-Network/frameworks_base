@@ -279,7 +279,7 @@
     <!-- Whether the device should automatically switch away from Wi-Fi networks that lose
          Internet access. Actual device behaviour is controlled by
          Settings.Global.NETWORK_AVOID_BAD_WIFI. This is the default value of that setting. -->
-    <integer translatable="false" name="config_networkAvoidBadWifi">0</integer>
+    <integer translatable="false" name="config_networkAvoidBadWifi">1</integer>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          USB interfaces.  If the device doesn't want to support tethering over USB this should
@@ -571,7 +571,7 @@
     <bool name="config_unplugTurnsOnScreen">false</bool>
 
     <!-- If this is true, the message that USB is only being used for charging will be shown. -->
-    <bool name="config_usbChargingMessage">false</bool>
+    <bool name="config_usbChargingMessage">true</bool>
 
     <!-- Set this true only if the device has separate attention and notification lights. -->
     <bool name="config_useAttentionLight">false</bool>
@@ -1461,7 +1461,7 @@
          PackageManager.FEATURE_TELEPHONY system feature, which is
          available on *any* device with a telephony radio, even if the
          device is data-only. -->
-    <bool name="config_voice_capable">false</bool>
+    <bool name="config_voice_capable">true</bool>
 
     <!-- Flag indicating that an outbound call must have a call capable phone account
          that has declared it can process the call's handle. -->
@@ -1478,7 +1478,7 @@
 
          Note: Disable SMS also disable voicemail waiting sms,
                cell broadcasting sms, and MMS. -->
-    <bool name="config_sms_capable">false</bool>
+    <bool name="config_sms_capable">true</bool>
 
     <!-- Default SMS Application. This will be the default SMS application when
          the phone first boots. The user can then change the default app to one
@@ -1518,7 +1518,7 @@
     <string name="gsm_alphabet_default_charset" translatable="false"></string>
 
     <!-- Enables SIP on WIFI only -->
-    <bool name="config_sip_wifi_only">true</bool>
+    <bool name="config_sip_wifi_only">false</bool>
 
     <!-- Enables built-in SIP phone capability -->
     <bool name="config_built_in_sip_phone">true</bool>
@@ -1727,10 +1727,10 @@
          Consider setting this resource to false or disabling dreams by default when a
          doze component is specified below since dreaming will supercede dozing and
          will prevent the system from entering a low power state until the dream ends. -->
-    <bool name="config_dreamsSupported">false</bool>
+    <bool name="config_dreamsSupported">true</bool>
 
     <!-- If supported, are dreams enabled? (by default) -->
-    <bool name="config_dreamsEnabledByDefault">false</bool>
+    <bool name="config_dreamsEnabledByDefault">true</bool>
     <!-- If supported and enabled, are dreams activated when docked? (by default) -->
     <bool name="config_dreamsActivatedOnDockByDefault">true</bool>
     <!-- If supported and enabled, are dreams activated when asleep and charging? (by default) -->
@@ -2657,7 +2657,7 @@
     <bool name="config_supportSystemNavigationKeys">false</bool>
 
     <!-- emergency call number for the emergency affordance -->
-    <string name="config_emergency_call_number" translatable="false">999</string>
+    <string name="config_emergency_call_number" translatable="false">112</string>
 
     <!-- Do not translate. Mcc codes whose existence trigger the presence of emergency
          affordances-->
