@@ -1650,7 +1650,12 @@
          This permission is not available to third party applications. -->
     <permission android:name="android.permission.CREATE_USERS"
         android:protectionLevel="signature" />
-
+     <!-- @hide Allows an application to change the package signature as
+          seen by applications -->
+     <permission android:name="android.permission.FAKE_PACKAGE_SIGNATURE"
+         android:protectionLevel="dangerous"
+         android:label="@string/permlab_fakePackageSignature"
+         android:description="@string/permdesc_fakePackageSignature" />
     <!-- @hide Allows an application to set the profile owners and the device owner.
          This permission is not available to third party applications.-->
     <permission android:name="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS"
